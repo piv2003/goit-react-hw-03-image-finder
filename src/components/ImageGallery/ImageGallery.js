@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { fetchImagesByName } from 'services/imagesApi';
+import { fetchImages } from 'getData/getData';
 import { ImageGalleryBox } from './ImageGallery.styled';
 import ImageGalleryItem from 'components/ImageGalleryItem';
-import ButtonLoadMore from 'components/ButtonLoadMore';
+import ButtonLoadMore from 'components/Button';
 import Loader from 'components/Loader';
 import { toast } from 'react-toastify';
 
@@ -35,7 +35,7 @@ class ImageGallery extends Component {
           status: Status.PENDING,
         });
 
-        const images = await fetchImagesByName(1, nextImgName);
+        const images = await fetchImages(1, nextImgName);
 
         this.setState({
           page: this.state.page + 1,
@@ -69,7 +69,7 @@ class ImageGallery extends Component {
       status: Status.PENDING,
     });
 
-    fetchImagesByName(nextPage, imgQuery)
+    fetchImages(nextPage, imgQuery)
       .then(nextImages => {
         this.setState({
           page: this.state.page + 1,

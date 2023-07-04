@@ -1,4 +1,4 @@
-import { Button } from './ButtonLoadMore.styled';
+import { Button } from './Button.styled';
 import PropTypes from 'prop-types';
 
 const ButtonLoadMore = ({ onBtnLoadMore }) => {
