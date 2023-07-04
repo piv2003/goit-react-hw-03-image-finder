@@ -6,3 +6,5 @@ import ImageGalleryItem from 'components/ImageGalleryItem';
 import ButtonLoadMore from 'components/ButtonLoadMore';
 import Loader from 'components/Loader';
 import { toast } from 'react-toastify';
+
+export default ImageGallery;
