@@ -5,3 +5,5 @@ import Modal from 'components/Modal';
 import { Wrapper } from './App.styled';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+export default App;
