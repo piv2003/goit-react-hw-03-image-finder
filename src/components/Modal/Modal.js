@@ -14,6 +14,18 @@ class Modal extends Component {
     window.removeEventListener('keydown', this.handleEscDown);
   }
 
+  handleBackdropClick = e => {
+    if (e.currentTarget === e.target) {
+      this.props.onCloseModal();
+    }
+  };
+
+  handleEscDown = e => {
+    if (e.code === 'Escape') {
+      this.props.onCloseModal();
+    }
+  };
+
   render() {
     return createPortal(
       <Overlay onClick={this.handleBackdropClick}>
