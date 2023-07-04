@@ -36,4 +36,11 @@ render() {
         </SearchForm>
       </SearchbarBox>
     );
-  }
+}
+
+SearchBar.propTypes = {
+  searchQuery: PropTypes.string.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default SearchBar;
