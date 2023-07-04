@@ -7,7 +7,7 @@ import {
   SearchbarInput,
   SearchButton,
   SearchForm,
-} from './Searchbar.styled';
+} from './SearchBar.styled';
 
 class SearchBar extends Component {
   state = {
