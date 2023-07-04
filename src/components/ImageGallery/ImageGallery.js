@@ -7,4 +7,17 @@ import ButtonLoadMore from 'components/ButtonLoadMore';
 import Loader from 'components/Loader';
 import { toast } from 'react-toastify';
 
+const Status = {
+  IDLE: 'idle',
+  PENDING: 'pending',
+  RESOLVED: 'resolved',
+  REJECTED: 'rejected',
+};
+
+ImageGallery.propTypes = {
+  onCardClick: PropTypes.func.isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  onOpenModal: PropTypes.func.isRequired,
+};
+
 export default ImageGallery;
