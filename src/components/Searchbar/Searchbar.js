@@ -8,3 +8,9 @@ import {
   SearchButton,
   SearchForm,
 } from './Searchbar.styled';
+
+class SearchBar extends Component {
+  state = {
+    newSearchQuery: '',
+  };
+}
