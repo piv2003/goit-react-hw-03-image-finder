@@ -14,3 +14,26 @@ class SearchBar extends Component {
     newSearchQuery: '',
   };
 }
+
+render() {
+    const { newSearchQuery } = this.state;
+
+    return (
+      <SearchbarBox>
+        <SearchForm onSubmit={this.handleSubmit}>
+          <SearchButton type="submit">
+            <GoSearch />
+          </SearchButton>
+
+          <SearchbarInput
+            type="text"
+            autocomplete="off"
+            autoFocus
+            placeholder="Search images and photos"
+            value={newSearchQuery}
+            onChange={this.handleChange}
+          />
+        </SearchForm>
+      </SearchbarBox>
+    );
+  }
