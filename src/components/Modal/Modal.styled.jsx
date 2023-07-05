@@ -10,10 +10,9 @@ export const Overlay = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1200;
+  z-index: 1500;
 `;
 
 export const ModalBox = styled.div`
   max-width: 70%;
-  margin: 0 auto;
 `;
