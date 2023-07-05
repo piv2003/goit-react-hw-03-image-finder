@@ -7,9 +7,9 @@ import {
   SearchbarInput,
   SearchButton,
   SearchForm,
-} from './SearchBar.styled';
+} from './Searchbar.styled';
 
-class SearchBar extends Component {
+class Searchbar extends Component {
   state = {
     newSearchQuery: '',
   };
@@ -65,9 +65,9 @@ class SearchBar extends Component {
   }
 }
 
-SearchBar.propTypes = {
+Searchbar.propTypes = {
   searchQuery: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };
 
-export default SearchBar;
+export default Searchbar;
