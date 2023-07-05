@@ -2,9 +2,9 @@ import styled from '@emotion/styled';
 
 export const Button = styled.button`
   display: inline-block;
-  max-width: 185px;
+  max-width: 180px;
   margin: 0 auto;
-  padding: 8px 17px;
+  padding: 8px 16px;
   border-radius: 2px;
   text-align: center;
   color: #fff;
