@@ -7,12 +7,12 @@ export const Overlay = styled.div`
   right: 0;
   bottom: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1500;
+  z-index: 1200;
 `;
 
 export const ModalBox = styled.div`
-  max-width: 70%;
+  max-width: 30%;
 `;
