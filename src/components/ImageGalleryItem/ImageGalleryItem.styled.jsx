@@ -4,7 +4,7 @@ export const ImageItem = styled.li`
   & img {
     display: block;
     width: 100%;
-    height: 260px;
+    height: 235px;
     object-fit: cover;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 15px;
