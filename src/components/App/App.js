@@ -36,7 +36,6 @@ class App extends Component {
 
   render() {
     const { searchQuery, imgUrl, tags, showModal } = this.state;
-
     return (
       <Wrapper>
         <Searchbar onSubmit={this.handleSubmit} searchQuery={searchQuery} />

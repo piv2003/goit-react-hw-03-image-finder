@@ -22,17 +22,13 @@ class Searchbar extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-
     const newImageQuery = this.state.newSearchQuery;
-
     if (newImageQuery === '') {
       return toast.warning('Please enter a search term');
     }
-
     if (newImageQuery === this.props.searchQuery) {
       toast.info('Enter another request');
     }
-
     if (newImageQuery !== this.props.searchQuery) {
       this.props.onSubmit(newImageQuery);
       this.setState({
@@ -43,14 +39,12 @@ class Searchbar extends Component {
 
   render() {
     const { newSearchQuery } = this.state;
-
     return (
       <SearchbarBox>
         <SearchForm onSubmit={this.handleSubmit}>
           <SearchButton type="submit">
             <GoSearch />
           </SearchButton>
-
           <SearchbarInput
             type="text"
             autocomplete="off"

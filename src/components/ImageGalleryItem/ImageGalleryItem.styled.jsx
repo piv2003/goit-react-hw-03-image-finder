@@ -2,10 +2,8 @@ import styled from '@emotion/styled';
 
 export const ImageItem = styled.li`
   & img {
-    display: block;
     width: 100%;
     height: 235px;
-    object-fit: cover;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 15px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1),
