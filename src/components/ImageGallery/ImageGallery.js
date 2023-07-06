@@ -47,7 +47,7 @@ class ImageGallery extends Component {
           toast.warning("Sorry, there's nothing more to show");
         }
         if (images.totalHits > 0) {
-          toast.success(`Success! Found ${images.totalHits} images`);
+          toast.success(`Success! Found ${images.total} images`);
         }
         if (images.totalHits === 0) {
           toast.error(`Oops! Nothing found. Enter another request`);

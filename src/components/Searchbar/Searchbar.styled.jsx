@@ -8,13 +8,10 @@ export const SearchbarBox = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 24px;
   color: #fff;
   background-color: #3f51b5;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 `;
 
@@ -22,7 +19,7 @@ export const SearchForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 555px;
   background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
@@ -34,8 +31,8 @@ export const SearchButton = styled.button`
   height: 48px;
   border: 0;
   opacity: 0.4;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 
   &:hover {

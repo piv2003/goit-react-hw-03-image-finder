@@ -13,6 +13,4 @@ export const Overlay = styled.div`
   z-index: 1200;
 `;
 
-export const ModalBox = styled.div`
-  /* max-width: 70%; */
-`;
+export const ModalBox = styled.div``;
