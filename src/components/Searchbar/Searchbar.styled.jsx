@@ -42,7 +42,6 @@ export const SearchButton = styled.button`
   & svg {
     width: 24px;
     height: 24px;
-    overflow: hidden;
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
   }
