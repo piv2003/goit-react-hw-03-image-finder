@@ -20,7 +20,7 @@ class ImageGallery extends Component {
     error: null,
     page: 1,
     images: [],
-    totalHits: null,
+    total: null,
   };
 
   async componentDidUpdate(prevProps, _) {
@@ -41,9 +41,9 @@ class ImageGallery extends Component {
           page: this.state.page + 1,
           status: Status.RESOLVED,
           images: images.hits,
-          totalHits: images.totalHits,
+          total: images.total,
         });
-        if (images.totalHits > 0 && images.totalHits <= 10) {
+        if (images.total > 0 && images.total <= 10) {
           toast.warning("Sorry, there's nothing more to show");
         }
         if (images.total > 0) {
@@ -78,9 +78,8 @@ class ImageGallery extends Component {
         });
 
         if (
-          nextImages.totalHits === this.state.images.length ||
-          nextImages.totalHits <
-            this.state.images.length + nextImages.hits.length
+          nextImages.total === this.state.images.length ||
+          nextImages.total < this.state.images.length + nextImages.hits.length
         ) {
           toast.error(`Sorry we have nothing more to show you.`);
         }
@@ -108,7 +107,7 @@ class ImageGallery extends Component {
   };
 
   render() {
-    const { status, images, totalHits } = this.state;
+    const { status, images, total } = this.state;
 
     return (
       <>
@@ -124,8 +123,8 @@ class ImageGallery extends Component {
           })}
         </ImageGalleryBox>
         {status === Status.RESOLVED &&
-          images.length !== totalHits &&
-          images.length < totalHits && (
+          images.length !== total &&
+          images.length < total && (
             <ButtonLoadMore onBtnLoadMore={this.onBtnLoadMore} />
           )}
         {status === Status.PENDING && <Loader />}
