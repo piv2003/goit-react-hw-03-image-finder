@@ -12,7 +12,6 @@ class App extends Component {
     imgUrl: '',
     tags: '',
     showModal: false,
-    buttonDiasbled: true,
   };
 
   handleSubmit = searchQuery => {
