@@ -3,16 +3,13 @@ import { Oval } from 'react-loader-spinner';
 const Loader = () => {
   return (
     <Oval
-      height={150}
-      width={150}
+      height={130}
+      width={130}
       color="#4058df"
-      wrapperStyle={{}}
-      wrapperClass=""
-      visible={true}
-      ariaLabel="oval-loading"
-      secondaryColor="#1a2ca1"
-      strokeWidth={4}
-      strokeWidthSecondary={4}
+      ariaLabel="oval-loader-spinner"
+      secondaryColor="#9e12a3"
+      strokeWidth={7}
+      strokeWidthSecondary={7}
     />
   );
 };
