@@ -68,15 +68,13 @@ class ImageGallery extends Component {
     this.setState({
       status: Status.PENDING,
     });
-
     fetchImages(nextPage, imgQuery)
       .then(nextImages => {
         this.setState({
-          page: this.state.page + 1,
+          page: nextPage + 1,
           status: Status.RESOLVED,
           images: [...this.state.images, ...nextImages.hits],
         });
-
         if (
           nextImages.total === this.state.images.length ||
           nextImages.total < this.state.images.length + nextImages.hits.length

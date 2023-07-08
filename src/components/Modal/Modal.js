@@ -10,10 +10,6 @@ class Modal extends Component {
     window.addEventListener('keydown', this.handleEscDown);
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('keydown', this.handleEscDown);
-  }
-
   handleEscDown = e => {
     if (e.code === 'Escape') {
       this.props.onCloseModal();
@@ -25,6 +21,10 @@ class Modal extends Component {
       this.props.onCloseModal();
     }
   };
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.handleEscDown);
+  }
 
   render() {
     return createPortal(
