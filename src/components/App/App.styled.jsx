@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   padding-bottom: 24px;
 
   & svg {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 `;

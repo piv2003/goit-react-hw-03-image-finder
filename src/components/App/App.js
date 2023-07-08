@@ -48,7 +48,7 @@ class App extends Component {
             {<img src={imgUrl} alt={tags} />}
           </Modal>
         )}
-        <ToastContainer autoClose={3000} theme="dark" />
+        <ToastContainer autoClose={2500} theme="dark" />
       </Wrapper>
     );
   }
