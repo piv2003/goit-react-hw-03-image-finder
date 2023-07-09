@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { fetchImages } from 'getData/getData';
+import { fetchImages } from '../App/App';
 import { ImageGalleryBox } from './ImageGallery.styled';
 import ImageGalleryItem from 'components/ImageGalleryItem';
 import ButtonLoadMore from 'components/Button';
